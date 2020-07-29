@@ -85,7 +85,7 @@ class ContactController extends Controller
     {
         $contact->destroy($contact->id);
 
-        $request->session()->flash('status','Blog post was deleted!');
+        $request->session()->flash('status','Contact was deleted!');
 
         return redirect(route('contact.index'));
     }
